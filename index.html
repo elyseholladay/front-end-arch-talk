@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/elyse.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h2>(Front End) Architecture</h2>
+					<h5>@elyseholladay</h5>
+				</section>
+
+				<section>
+					<h1>ar·chi·tec·ture</h1>
+					<h3 class="fade">Architecture is both the process and the product of planning, designing, and constructing buildings and other physical structures.</h3>
+				</section>
+
+				<section>
+					<h1>ar·chi·tec·ture</h1>
+					<h3><span class="fade">Architecture is both</span> <span class="highlight">the process and the product</span> <span class="fade">of planning, designing, and constructing buildings and other physical structures.</span></h3>
+				</section>
+
+				<section>
+					<h4>So what is <span class="purple">Front End Architecture</span>?</h4>
+				</section>
+
+				<section>
+					<h3>Front-end Architecture is a collection of tools and processes that aims to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</h3>
+				</section>
+
+				<section>
+					<h3><span class="fade">Front-end Architecture is</span> <span class="highlight">a collection of tools and processes</span> <span class="fade">that aims to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</span></h3>
+				</section>
+
+				<section>
+					<h4>code standards &middot; documentation &middot; visual regression testing &middot; automation &middot; pattern libraries &middot; build systems &middot; maintainability &middot; performance &middot; tooling &middot; DRY code &middot; front end ops &middot; clarity &middot; efficiency &middot; scalability &middot; extensibility &middot; dependency management &middot; unit testing &middot; style guides &middot; continuous integration</h4>
+				</section>
+
+
+				<section>
+					<h4><span class="fade">code standards</span> &middot; <span class="fade">documentation</span> &middot; <span class="fade">visual regression testing</span> &middot; <span class="highlight">automation</span> &middot; <span class="fade">pattern libraries</span> &middot; <span class="fade">build systems</span> &middot; <span class="highlight">maintainability</span> &middot; <span class="highlight">performance</span> &middot; <span class="highlight">tooling</span> &middot; <span class="highlight">DRY code</span> &middot; <span class="highlight">front end ops</span> &middot; <span class="highlight">clarity</span> &middot; <span class="highlight">efficiency</span> &middot; <span class="highlight">scalability</span> &middot; <span class="highlight">extensibility</span> &middot; <span class="fade">dependency management</span> &middot; <span class="fade">unit testing</span> &middot; <span class="fade">style guides</span> &middot; <span class="fade">continuous integration</span></h4>
+                    <aside class="notes">
+                        <p>The process is automation, how we write code for clarity, maintainability, and modularity. it's how we help our future selves. The process creates the product.</p>
+                    </aside>
+				</section>
+
+
+				<section>
+					<h4><span class="highlight">code standards</span> &middot; <span class="highlight">documentation</span> &middot; <span class="highlight">visual regression testing</span> &middot; <span class="fade">automation</span> &middot; <span class="highlight">pattern libraries</span> &middot; <span class="highlight">build systems</span> &middot; <span class="fade">maintainability</span> &middot; <span class="fade">performance</span> &middot; <span class="fade">tooling</span> &middot; <span class="fade">DRY code</span> &middot; <span class="fade">front end ops</span> &middot; <span class="fade">clarity</span> &middot; <span class="fade">efficiency</span> &middot; <span class="fade">scalability</span> &middot; <span class="fade">extensibility</span> &middot; <span class="highlight">dependency management</span> &middot; <span class="highlight">unit testing</span> &middot; <span class="highlight">style guides</span> &middot; <span class="highlight">continuous integration</span></h4>
+                    <aside class="notes">
+                        <p>The product is a style guide, a consumable package of code, a code standards guideline. it's a build system, internal tools, grunt, package and dependency management, tests.</p>
+                    </aside>
+				</section>
+
+
+				<section>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

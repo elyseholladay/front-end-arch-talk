@@ -1,0 +1,96 @@
+/**
+ * Elyse theme!
+ * Author: Elyse Holladay
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+@import "fonts.css";
+// ---------------------------------------------
+
+
+// Colors
+
+
+$black: #000;
+$white: #fff;
+$navy: darken(#012E51,10%);
+$blue-dark: #012E51;
+$blue: rgb(35, 128, 226);
+$blue-light: rgb(99, 159, 222);
+$blue-pale: rgb(206, 226, 247);
+$orange: rgb(255, 152, 0);
+$green: rgb(130, 179, 0);
+$purple: rgb(156, 39, 176);
+$purple-dark: darken($purple,30%);
+$fuchsia: rgb(194, 24, 91);
+$yellow: rgb(255, 202, 0);
+
+// Primary/body text
+$mainFont: 'PlutoSansCondLight', sans-serif;
+$mainFontSize: 36px;
+$mainColor: $white;
+
+// Headings
+$headingFont: "PlutoSansCondLight", "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
+$headingColor: $white;
+$headingLineHeight: 1.25em;
+$headingLetterSpacing: 0;
+$headingTextTransform: none;
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: $white;
+$linkColorHover: $blue;
+
+// Text selection
+$selectionBackgroundColor: $purple;
+$selectionColor: $white;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+body {
+    background: $purple-dark;
+}
+
+
+.reveal h4 {
+    font-family: "PlutoSansCondRegular";
+    font-size: 38px;
+}
+
+.reveal h5 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.reveal h6 {
+    color: transparentize($white,.25);
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "PlutoSansRegular";
+}
+
+.highlight {
+    color: $white;
+}
+
+.fade {
+    color: transparentize($white,.5);
+}
+
+.purple {
+    color: $purple;
+}
+
+.typekit-badge {display: none !important;}
