@@ -18,15 +18,16 @@ $black: #000;
 $white: #fff;
 $navy: darken(#012E51,10%);
 $blue-dark: #012E51;
-$blue: rgb(35, 128, 226);
+$blue: darken(rgb(35, 128, 226),15%);
 $blue-light: rgb(99, 159, 222);
 $blue-pale: rgb(206, 226, 247);
-$orange: rgb(255, 152, 0);
-$green: rgb(130, 179, 0);
+$orange: #FF851B;
+$green: darken(rgb(130, 179, 0),10%);
 $purple: rgb(156, 39, 176);
 $purple-dark: darken($purple,25%);
 $fuchsia: rgb(194, 24, 91);
 $yellow: rgb(255, 202, 0);
+$crimson: crimson;
 
 // Primary/body text
 $mainFont: 'PlutoSansCondLight', sans-serif;
@@ -59,6 +60,30 @@ $selectionColor: $white;
 
 body {
     background: $purple-dark;
+}
+
+.fuchsia body {
+    background: $fuchsia;
+}
+
+.crimson body {
+    background: $crimson;
+}
+
+.blue body {
+    background: $blue;
+}
+
+.green body {
+    background: $green;
+}
+
+.black body {
+    background: $black;
+}
+
+.fuchsia {
+    color: $fuchsia;
 }
 
 .reveal .code {

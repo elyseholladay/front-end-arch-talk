@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Front End Architecture | Elyse Holladay | The Mixin SF 12/10/14</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -42,36 +42,56 @@
 
 			<div class="slides">
 
-				<section>
-					<h2>Front End Architecture</h2>
-					<h5>@elyseholladay</h5>
-				</section>
-
-				<section>
+				<section data-state="fuchsia">
 					<h1>ar·chi·tec·ture</h1>
 					<h3>Architecture is both the process and the product of planning, designing, and constructing buildings and other physical structures.</h3>
 				</section>
 
-				<section>
+				<section data-state="fuchsia">
+					<h2>@elyseholladay</h2>
+					<aside class="notes">
+						<p>I'm Elyse; I am a Front End Architect at RetailMeNot in Austin. Anyone a RetailMeNot user?</p>
+					</aside>
+				</section>
+
+				<section data-state="fuchsia">
+					<h1>ar·chi·tec·ture</h1>
+					<h3>Architecture is both the process and the product of planning, designing, and constructing buildings and other physical structures.</h3>
+					<aside class="notes">
+						<p>This is the definition of architecture—traditional architecture, like of buildings—on wikipedia.</p>
+						<p>[READ SLIDE]</p>
+					</aside>
+				</section>
+
+				<section data-state="fuchsia">
 					<h1>ar·chi·tec·ture</h1>
 					<h3><span class="faded">Architecture is both</span> <span class="highlight">the process and the product</span> <span class="faded">of planning, designing, and constructing buildings and other physical structures.</span></h3>
-				</section>
-
-				<section>
-					<h3>So what is <span class="purple">Front End Architecture</span>?</h3>
-				</section>
-
-				<section>
-					<h3>Front-end Architecture is a collection of tools and processes that aims to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</h3>
 					<aside class="notes">
-						<p>Believe it or not, there are some people, like me, who enjoy the organizational part of writing CSS more than we enjoy making something pretty or animated or a better interaction. I like making a CSS file that was organized and commented, that other people could read and use, and I feel that the end result (the designed website) is way better when the code is better.</p>
+						<p>The process and the product.</p>
+						<p>With that in mind—what does that mean... [SLIDE]</p>
+					</aside>
+				</section>
+
+				<section data-state="fuchsia">
+					<h3><span class="faded">So what is</span> Front End Architecture?</h3>
+					<aside class="notes">
+						<p>For front-end development? For building apps and websites?</p>
+						<p>What is front end architecture?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h3>Front-end Architecture is a collection of tools and processes that aim to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</h3>
+					<aside class="notes">
+						<p>[READ SLIDE]</p>
+						<p>Believe it or not, there are some people, like me, who enjoy the organizational part of writing CSS more than we enjoy making something pretty or animated or a better interaction. I like making a CSS file that is organized and commented, that other people can read and use <strong>with joy</strong>, and I feel that the end result (the designed website) is way better when the code is better.</p>
 						<p>And I believe it makes sense to have a separate role for this, not just foist this work off on all your front-end devs.</p>
 						<p>Front-end dev has gotten SO complex these days that we can't assume that all devs care about this. We can't leave a gap of responsibilities, like visual regression testing, linting, or building internal tools and documentation, and hope it will get done a little bit by everyone. It's time we put focus on this, as it deserves, rather than being an afterthought.</p>
 					</aside>
 				</section>
 
 				<section>
-					<h3><span class="faded">Front-end Architecture is</span> <span class="highlight">a collection of tools and processes</span> <span class="faded">that aims to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</span></h3>
+					<h3><span class="faded">Front-end Architecture is</span> <span class="highlight">a collection of tools and processes</span> <span class="faded">that aim to improve the quality of our front-end code while creating a more efficient and sustainable workflow.</span></h3>
 					<aside class="notes">
 						<p>Micah Godbolt gave a great talk at CSSDevConf called Raising a Flag for the Front End Architect, and in it this is how he defined FEA.</p>
 
@@ -98,76 +118,93 @@
 				</section>
 
 
-				<section>
+				<section data-state="blue">
 					<h4>code standards &middot; documentation &middot; visual regression testing &middot; automation &middot; pattern libraries &middot; build systems &middot; maintainability &middot; performance &middot; tooling &middot; DRY code &middot; front end ops &middot; clarity &middot; efficiency &middot; scalability &middot; extensibility &middot; dependency management &middot; unit testing &middot; style guides &middot; continuous integration</h4>
+					<aside class="notes">
+						<p>buzzwords time!</p>
+					</aside>
 				</section>
 
 
-				<section>
+				<section data-state="blue">
 					<h4><span class="faded">code standards</span> &middot; <span class="faded">documentation</span> &middot; <span class="faded">visual regression testing</span> &middot; <span class="highlight">automation</span> &middot; <span class="faded">pattern libraries</span> &middot; <span class="faded">build systems</span> &middot; <span class="highlight">maintainability</span> &middot; <span class="highlight">performance</span> &middot; <span class="highlight">tooling</span> &middot; <span class="highlight">DRY code</span> &middot; <span class="highlight">front end ops</span> &middot; <span class="highlight">clarity</span> &middot; <span class="highlight">efficiency</span> &middot; <span class="highlight">scalability</span> &middot; <span class="highlight">extensibility</span> &middot; <span class="faded">dependency management</span> &middot; <span class="faded">unit testing</span> &middot; <span class="faded">style guides</span> &middot; <span class="faded">continuous integration</span></h4>
                     <aside class="notes">
-                        <p>The process is automation, how we write code for clarity, maintainability, and modularity. it's how we help our future selves. The process creates the product.</p>
+	                    <p>If we remember that architecture is both the process and the product, for us...</p>
+                        <p>The process is automation, how we write code for clarity, maintainability, and modularity. it's how we help our future selves.</p>
+                        <p>Then, the process creates the product.</p>
                     </aside>
 				</section>
 
 
-				<section>
+				<section data-state="blue">
 					<h4><span class="highlight">code standards</span> &middot; <span class="highlight">documentation</span> &middot; <span class="highlight">visual regression testing</span> &middot; <span class="faded">automation</span> &middot; <span class="highlight">pattern libraries</span> &middot; <span class="highlight">build systems</span> &middot; <span class="faded">maintainability</span> &middot; <span class="faded">performance</span> &middot; <span class="faded">tooling</span> &middot; <span class="faded">DRY code</span> &middot; <span class="faded">front end ops</span> &middot; <span class="faded">clarity</span> &middot; <span class="faded">efficiency</span> &middot; <span class="faded">scalability</span> &middot; <span class="faded">extensibility</span> &middot; <span class="highlight">dependency management</span> &middot; <span class="highlight">unit testing</span> &middot; <span class="highlight">style guides</span> &middot; <span class="highlight">continuous integration</span></h4>
                     <aside class="notes">
-                        <p>The product is a style guide, a consumable package of code, a code standards guideline. it's a build system, internal tools, grunt, package and dependency management, tests.</p>
+                        <p>The product is a style guide, a consumable package of code, a code standards guideline. it's a build system, internal tools, grunt, package and dependency management, tests. It's the CSS and HTML and JS modules themselves, that developers use to create a website.</p>
                     </aside>
 				</section>
 
+
+				<section data-state="blue">
+					<h3>A Front End Developer's audience is the website user. <br/><br/>
+					A Front End Architect's audience <br/>is the developers themselves.</h3>
+					<aside class="notes">
+						<p>A Front End Developer's audience is the website user. <br/><br/>
+					A Front End Architect's audience is the developers themselves.</p>
+					</aside>
+				</section>
+
+				<section data-state="blue">
+					<h3><span class="faded">A Front End Developer's audience is the website user. <br/><br/>
+					A Front End Architect's audience <br/>is</span> the developers themselves.</h3>
+					<aside class="notes">
+						<p>This may seem obvious, or no big deal, but to me it's the key to understanding why Front End Architecture needs to be a separate discipline than just front end development.</p>
+					</aside>
+				</section>
+
+
+				<section data-state="blue">
+					<p>A Front End Architect builds the design and construction. <br/>An Architect is more a designer of constructions, not the actual builder.</p>
+					<aside class="notes">
+						<p>An architect is more a designer of constructions not the actual builder.</p>
+					</aside>
+				</section>
+
+				<section data-state="blue">
+					<p><span class="faded">A Front End Architect builds the design and construction. <br/>An Architect is more</span> a designer of constructions, not the actual builder.</p>
+					<aside class="notes">
+						<p>This means that I am building the legos, if you will, of the site, so that my developers—you—can build the site itself.</p>
+						<!-- <p>"Another goal of Front End Architecture is facilitating tools and putting processes in place that any new dev that joins your team can start using the architecture at hand straight away instead of everyone doing it their way."</p> -->
+					</aside>
+				</section>
+
+
+				<section data-state="green">
+					<h3>You are the builders of the web.</h3>
+				</section>
+
+
+				<section data-state="blue">
+					<h6>My current job description:</h6>
+					<p>&#8220;refactoring & documenting Sass/CSS/HTML modules, making a consumable package of Sass for other apps, visual direction and UX of a living style guide tool, versioning the tool, testing it, producing release notes, and of course, actually building it.&#8221;</p>
+					<aside class="notes">
+						<p>My current job description</p>
+						<p>refactoring & documenting Sass/CSS/HTML modules, making a consumable package of Sass for other apps, visual direction and UX of a living style guide tool, versioning the tool, testing it, producing release notes, and of course, actually building it</p>
+						<p> As the tool is being built, this role will work collaboratively on features with consuming teams, to make sure it is working as needed. They will train consuming teams on both the value of the tool as well as how to use it.</p>
+						<p>As well they will provide conflict resolution for conflicting UI components/use cases, and consult with teams on the best ways to design and build new UI features with best practices/reusability in mind.”</p>
+					</aside>
+				</section>
 
 				<section>
 					<h3 class="fragment">AN INTERNAL AUDIENCE</h3>
 					<h3 class="fragment">DEVELOPER ERGONOMICS</h3>
-					<h3 class="fragment">LONG TERM MAINTAINABILITY/VIEW</h3>
+					<h3 class="fragment">LONG TERM MAINTENANCE</h3>
 
 					<aside class="notes">
-						<p>At a higher level, I believe the FEA has to care about three things that your average developer doesn't have to.</p>
-					</aside>
-				</section>
-
-				<section>
-					<h3>A Front End Developer's audience is the website user. <br/><br/>
-					A Front End Architect's audience <br/>is the developers themselves.</h3>
-				</section>
-
-				<section>
-					<h3><span class="faded">A Front End Developer's audience is the website user. <br/><br/>
-					A Front End Architect's audience <br/>is</span> the developers themselves.</h3>
-				</section>
-
-				<section>
-					<p>A Front End Architect builds the design and construction. <br/>An Architect is more a designer of constructions, not the actual builder.</p>
-					<aside class="notes">
-					<p>From the comments of Micah's GitHub repo on the topic:</p>
-						<p>A FEA builds the design and construction. An architect is more a designer of constructions not the actual builder.</p>
-					</aside>
-				</section>
-
-				<section>
-					<p><span class="faded">A Front End Architect builds the design and construction. <br/>An Architect is more</span> a designer of constructions, not the actual builder.</p>
-					<aside class="notes">
-						<p>From the comments of Micah's GitHub repo on the topic:</p>
-						<p>A FEA builds the design and construction. An architect is more a designer of constructions not the actual builder.</p>
-						<p>To me, as an FEA, this really means that I am building the legos, if you will, of the site, so that my developers can build the site itself.</p>
-						<p>"One of the goals of FEA not mentioned is also about facilitating tools and putting processes in place that any new FEA that joins your team or FEA teams as such can start using the architecture at hand straight away instead of everyone doing it their way."</p>
-						<p>"I've always understand software architecture as encompassing the overall structure of the system or application. Tools and processes are part of that (an important part!), but so is the high-level design patterns of the system. For front-end architecture, this might mean deciding where rendering is happening in your application, how assets are structured and loaded (JS, CSS, images, fonts, etc.), how UI modules communicate with each other, etc. <strong>And of course, the tools/processes/workflow to go along with and support those decisions."</strong></p>
-					</aside>
-				</section>
-
-				<section>
-					<h3>You are the builders of the web.</h3>
-				</section>
-
-				<section>
-					<h6>My current job description:</h6>
-					<p>&#8220;refactoring & documenting Sass/CSS/HTML modules, making a consumable package of Sass for other apps, visual direction and UX of a living style guide tool, versioning the tool, testing it, producing release notes, and of course, actually building it.&#8221;</p>
-					<aside class="notes">
-						<h2>My current job description</h2>
-						<p>“This role includes visual direction and UX of the tool, how to make [patterns/Sass code] consumable in other apps, versioning the tool, testing it, producing release notes, and of course, actually building it. As the tool is being built, this role will work collaboratively on features with consuming teams, to make sure it is working as needed. They will train consuming teams on both the value of the UI components tool as well as how to use it. Ongoing, they will provide release notes and information as the tool is updated, as well as provide conflict resolution for conflicting UI components/use cases, and consult with teams on the best ways to design and build new UI features with best practices/reusability in mind.”</p>
+						<p>Writing code as an architect is a different beast than writing code that is deployed straight to the browser.</p>
+						<p>A Front End Architect has to care about three things that your average developer doesn't have to.</p>
+						<p>[FRAGMENT] an internal audience</p>
+						<p>[FRAGMENT] developer ergonomics</p>
+						<p>[FRAGMENT] long term maintenance</p>
 					</aside>
 				</section>
 
@@ -182,23 +219,25 @@
 				<section>
 					<h4>Front End Architects are not <br/>writing CSS for the browser.</h4>
 					<aside class="notes">
-						<p>as an author of CSS/Sass you are writing code for internal consumers - other developers - not for users - not for the browser</p>
-						<p>your FE code is going to other developers, not being immediately minified and going straight to prod</p>
+						<p>I am writing code for internal consumers - other developers - not for users - not to be minified and go straight to the browser.</p>
+
 					</aside>
 				</section>
 
-				<section>
-					<span class="code">&#60;div class="c2 p1 fll cf"&#62;</span>
+				<section data-state="black">
+					<span class="code">&#60;div class="c2 p1 usr-ntfy usr-box cf"&#62;</span>
 					<aside class="notes">
 						<p>This means you have many different concerns—you care about the people reading the code, so you want to write human-readable code.</p>
 						<p>The browser doesn't care what your classnames are—so why not make them super short and efficient and acronym-y?</p>
+						<p>Because this [POINT AT SLIDE] is difficult to parse, as a human. And the efficiency gains of a longer classname list, for the browser, is typically not significant.</p>
+						<p>And if this is difficult for you to parse, it's more difficult for you to know where to add code, or change code, or what might affect something else.</p>
 					</aside>
 				</section>
 
 				<section>
 					<h3>DEVELOPER ERGONOMICS</h3>
 					<aside class="notes">
-						<p>The heck are developer ergonomics?</p>
+						<p>So what are developer ergonomics?</p>
 					</aside>
 				</section>
 
@@ -214,117 +253,109 @@
 
 				<section>
 					<h3>What is your primary skillset?</h3>
-					<p class="fragment">& how often do you struggle to do something else?</p>
+					<p class="fragment">& how often do you struggle with something else?</p>
 					<aside class="notes">
+						<p>What is your primary skillset?</p>
 						<p>[FRAGMENT]</p>
-						<p>We want a dev who may not understand CSS very well to not have to worry about where to add code, or if will cause specificity issues. we want a designer who wants to make a new visual addition to not worry about breaking prod and introducing bugs. but we also want a dev or designer who loves writing CSS to have a huge toolbox of extensible styles they can play with, see the inner workings, and make new stuff - but not have to reinvent the wheel.</p>
+						<p>And how often do you struggle with doing something else that ISN'T your primary job?</p>
+						<p>We want a dev who may not understand CSS very well to not have to worry about where to add code, or if will cause specificity issues.</p>
+						<p>We want a designer who wants to make a new visual addition to not worry about breaking prod and introducing bugs.</p>
+						<p>but we also want a dev or designer who loves writing CSS to have a huge toolbox of extensible styles they can play with, see the inner workings, and make new stuff - but not have to reinvent the wheel.</p>
 					</aside>
 				</section>
 
 				<section>
-					<p>“Backend developers or designers don't want to spend <br/>time on the nuances of front end code. It has nothing to <br/>do with their intelligence, but it isn't their core competency. Recognizing that—and solving for it—is crucial. It frees them up to do the work they are best at.”</p>
-				</section>
-
-				<section>
-					<p><span class="faded">“Backend developers or designers don't want to spend <br/>time on the nuances of front end code. It has nothing to <br/>do with their intelligence, but it isn't their core competency. Recognizing that—and solving for it—is crucial.</span> It frees them up to do the work they are best at.<span class="faded">”</span></p>
-					<aside class="notes">
-						<p>Think of the 80/20 rule. You should get to spend 80% of your time doing the thing YOU are really good at, whether it's prototyping a new flow so you can get users in front of it, or writing JS unit tests or something; and then 20% of your time in setup, polish, code review, etc.</p>
-						<p>But how often do you spend more like 20% of your time on the feature, and 80% of your time making sure there aren't CSS bugs in prod? Or whether or not you increased performance? Or unable to find where the CSS you need is?</p>
-						<p>The job of the Front End Architect is to <em>make it so that you can focus on the work you are best at.</em></p>
-					</aside>
-				</section>
-
-				<section>
-					<h3>LONG TERM MAINTAINABILITY/VIEW</h3>
+					<h3>LONG TERM MAINTENANCE</h3>
 					<aside class="notes">
 						<p>what is “long term”? for a client project, or a prototype, long term might be 3-6 months, a year. you need front end code that can withstand a few changes, but not many people touching it, etc.</p>
 						<p>Salesforce is ~15 years old — lots of original code.</p>
 						<p>Retailmenot’s site is over 4 years old—and in many places it’s the same code as when we purchased it in 2010. RMN has ~50-60 devs, a big design/product team, and 5-10 features or A/B tests on various parts of the site at any given time. ops has scaled, deployment has scaled, but the css/front end has not.</p>
-					</aside>
-				</section>
-
-				<section>
-				<h3>“If we think about CSS first, we’ll be able to think about CSS less.”</h3>
-				<h6>—Michelle Bu, @hazelcough #cssconfoak</h6>
-					<aside class="notes">
 						<p>lots of time to have to live with your technical decisions! long term takes on a different meaning when you think that the tech choices you are making could be things you live with for 5, 10 years.</p>
 					</aside>
 				</section>
 
 				<section>
 					<h3>Technical Debt</h3>
+					<aside class="notes">
+						<p>So we all know the concept of technical debt...</p>
+					</aside>
 				</section>
 
 				<section>
 					<h3><span class="faded">Technical</span> Savings</h3>
 					<aside class="notes">
+						<p>but what about technical savings?</p>
 						<p>Technical Savings: Well-designed code, planned to satisfy future needs. Technical Savings are a form of wealth that makes a module more maintainable, extensible or reusable.</p>
 						<p>Technical Savings are the result of some extra work. We must invest in the design of our modules so that they are indeed more maintainable, extensible and reusable. But we must believe that this investment will pay itself in the future. If done right, the efforts invested in accumulating Technical Savings should be smaller than the efforts required in the alternative of incurring technical debt and then paying this debt through successive refactors.</p>
 					</aside>
 				</section>
 
 				<section>
-					&nbsp;
+					<h3>HUMAN READABLE CODE.</h3>
 					<aside class="notes">
-						<p>
-							So here are just a few things that differ when you're architecting CSS/Sass for a large scale project, for internal consumers, rather than writing CSS that goes straight to the browser.
-						</p>
+						<p>So here are just a few things that differ when you're architecting CSS/Sass for a large scale project, for internal consumers, rather than writing CSS that goes straight to the browser.</p>
+						<p>First of all, and I can't stress this enough: human readable code.</p>
+						<p>The browser doesn't care, and when you send code to the browser you want it to be squished and minified and ugly—but as a front end architect, you're not writing code for the browser. You're writing code for humans.</p>
 					</aside>
-				</section>
-
-				<section>
-					<h3>Human readable code.</h3>
 				</section>
 
 				<section>
 					<p>&middot;&nbsp;&nbsp;&nbsp;keep the authoring style sheets accessible</p>
 					<p class="fragment">&middot;&nbsp;&nbsp;&nbsp;don’t needlessly complicate simple needs</p>
-					<p class="fragment">&middot;&nbsp;&nbsp;&nbsp;one-to-one parity of file names (html, css, js)</p>
+					<p class="fragment">&middot;&nbsp;&nbsp;&nbsp;one-to-one parity of file names</p>
 					<p class="fragment">&middot;&nbsp;&nbsp;&nbsp;prefer unambigious names over shorthand</p>
 					<aside class="notes">
 						<p>HUMAN READABLE CODE, naming with intent, classes, named files/partials/JS the same (one-to-one parity)</p>
 						<p>Ben Frain:</p>
 						<p>Don’t write impenetrable looking code. CSS is a declarative language so try and keep the authoring style sheets as accessible as the resultant CSS. Mixins and logical loops are sometimes preferable and advantageous (they can greatly reduce verbosity and repetition in the authoring style sheets) but don’t needlessly complicate simple needs. </p>
+						<p>Try to create one-to-one parity of your HTML, CSS, JS, folder names, so you always know exactly what to look for</p>
+						<p>And of course, prefer unambigious names over acronyms, or shorthand, or making people guess about what they're looking for.</p>
 					</aside>
 				</section>
 
 
-				<section>
+				<section data-state="blue">
 					<p>“Don’t write clever code. Write embarassingly obvious code.”</p>
 					<h6>—Scott Stevenson, @scottstevenson</h6>
-				</section>
-
-				<section>
-					<h3>Practice Safe CSS.</h3>
 					<aside class="notes">
-						<p>Ben Frain:</p>
-						<p>Name-spacing the CSS of each visual component can be used to create some form of isolation. By preventing name collisions with other components, chunks of CSS can be more easily moved one environment to another (from prototype to production for example).</p>
-						<p>“As name-spaced components are almost guaranteed to not leak into other components it makes it incredibly easy to build out and iterate on new components as new design requests are received. It affords a hitherto un-afforded blanket of impunity.</p>
+						<p>I love this quote by Scott Stevenson, he tweeted this just yesterday. </p>
+						<p>“Don’t write clever code. Write embarassingly obvious code.”</p>
 					</aside>
 				</section>
 
 				<section>
-					<p>“In some ways it is the opposite of DRY; we are gaining a degree of component isolation at the cost of verbosity.”</p>
+					<h3>PRACTICE SAFE CSS.</h3>
+					<aside class="notes">
+						<p>This one is huge, too. If we want to remove the burden of "will this break something on the website?" from our developers, we have to write bulletproof, super safe CSS, so they can not worry.</p>
+					</aside>
+				</section>
+
+				<section data-state="blue">
+					<p>“By preventing name collisions with other components, chunks of CSS can be more easily moved one environment to another (prototype, stg, prod),... or be removed in the safe knowledge that their removal will not affect others.”</p>
 					<h6>—Ben Frain</h6>
 					<aside class="notes">
+						<p>Name-spacing the CSS of each visual component can be used to create some form of isolation. By preventing name collisions with other components, chunks of CSS can be more easily moved one environment to another (from prototype to production for example).</p>
+						<p>“As name-spaced components are almost guaranteed to not leak into other components it makes it incredibly easy to build out and iterate on new components as new design requests are received. It affords a hitherto un-afforded blanket of impunity.</p>
 						<p>This approach however is not without cost. This approach has greater potential for code duplication (you may be styling one item in a component that could be abstracted and easily used in another component) but I find it results in far more maintainable code – whole components can be removed in the safe knowledge that their removal will not affect others.</p>
+						<p>“In some ways it is the opposite of DRY; we are gaining a degree of component isolation at the cost of verbosity.”</p>
 					</aside>
 				</section>
 
-				<section>
+				<section data-state="crimson">
 					<h2>“I don’t know what that’s for, so just leave it in.”</h2>
 					<aside class="notes">
-						<p>“In the situation of a rapidly changing and enduring project, where many different hands have, and will, be on the CSS, my empirical findings have been that more CSS bloat accumulates due to author deletion fear (“I don’t know what that’s for so just leave it in”) than duplicated styles. It’s likely that CSS authors are more likely to simply add to existing CSS than risk removing huge swathes of it because it’s difficult to be entirely sure what will be affected.“</p>
+						<p>“In a rapidly changing large project, where many different people touch CSS, I find that more CSS bloat accumulates due to author deletion fear than duplicated styles.</p>
+						<p>It’s likely that CSS authors are more likely to simply add to existing CSS than risk removing huge swathes of it because it’s difficult to be entirely sure what will be affected.“</p>
 					</aside>
 				</section>
 
 				<section>
 					<h6>But yes, also</h6>
-					<h3>modular, reusable, composable code.</h3>
+					<h3>MODULAR, REUSABLE, <br/>COMPOSABLE CODE.</h3>
 					<aside class="notes">
-						<p>“Typically, my foremost goal when writing CSS for enduring and rapidly changing web application is long-term maintainability.”</p>
-						<p>understanding output and the tradeoffs in file size, selector output/css bloat, and ease of authoring and reuse</p>
-						<p>Composition is the idea that an html component might “contain” other styles, rather than “inheriting” those styles. You can see this principle used extensively in OOCSS, BEM and Sass @extends. Instead of layers of styles, each overriding the last, these approaches embrace the Single Responsibility Principle with hyper targeted selectors that do one job well and one job only.</p>
+						<p>My goal when writing CSS for enduring and rapidly changing web application is long-term maintainability.</p>
+						<p>It's important to understand output and the tradeoffs in file size, selector output/css bloat, and ease of authoring and reuse.</p>
+						<p>Composition is the idea that an html component might “contain” other styles, rather than “inheriting” those styles. You can see this principle used extensively in OOCSS, BEM and Sass @extends. Instead of layers of styles, each overriding the last, these approaches embrace the Single Responsibility Principle.</p>
 					</aside>
 				</section>
 
@@ -338,19 +369,53 @@
 				</section>
 
 				<section>
-					<h3>Documentation</h3>
+					<h3>DOCUMENTATION</h3>
+					<aside class="notes">
+						<p>Ah, documentation. Everyone's favorite, right?</p>
+					</aside>
+				</section>
+
+				<section>
+					<h3><strike>DOCUMENTATION</strike></h3>
+					<aside class="notes">
+						<p>What if I told you you didn't have to write any documentation yourself, but that it was all there, in the files for you, so that</p>
+						<p>[SLIDE]</p>
+					</aside>
 				</section>
 
 				<section>
 					<h3>You can find what you need.</h3>
 					<aside class="notes">
-						<p>detailed documentation inline in the CSS or HTML to increase ability to reuse components rather than write new ones</p>
-						<p>I want to write the world's most detailed CSS/Sass comments, instructions in helpers, mixins, etc, so that you don't have to. So when you go hunting for how to make that style, button, whatever, it's painless and mindless for you.</p>
-						<p>Because you are the builders of the web—and your job should be easier.</p>
+						<p>A Front End Architect should produce detailed documentation inline in the CSS or HTML to increase ability to reuse components rather than write new ones</p>
+						<p>I want to write the world's most detailed CSS/Sass comments, instructions in helpers, mixins, etc, so that you don't have to. So when you go hunting for how to make that style, button, whatever, it's painless for you.</p>
 					</aside>
 				</section>
 
 				<section>
+					<p>Backend developers or designers don't want to spend <br/>time on the nuances of front end code. It has nothing to <br/>do with their intelligence, but it isn't their core competency. Recognizing that—and solving for it—is crucial. It frees them up to do the work they are best at.</p>
+					<!-- <h6>—Elyse Holladay, @elyseholladay</h6> -->
+				</section>
+
+				<section>
+					<p><span class="faded">Backend developers or designers don't want to spend <br/>time on the nuances of front end code. It has nothing to <br/>do with their intelligence, but it isn't their core competency. Recognizing that—and solving for it—is crucial.</span> It frees them up to do the work they are best at.<span class="faded"></span></p>
+					<aside class="notes">
+						<p>Think of the 80/20 rule. You should get to spend 80% of your time doing the thing YOU are really good at, whether it's prototyping a new flow so you can get users in front of it, or writing JS unit tests or something; and then 20% of your time in setup, polish, code review, etc.</p>
+						<p>But how often do you spend more like 20% of your time on the feature, and 80% of your time making sure there aren't CSS bugs in prod? Or whether or not you increased performance? Or unable to find where the CSS you need is?</p>
+						<p>The job of the Front End Architect is to <em>make it so that you can focus on the work you are best at.</em></p>
+					</aside>
+				</section>
+
+				<section data-state="blue">
+					<h3>“If we think about CSS first, we’ll be able to think about CSS less.”</h3>
+					<h6>—Michelle Bu, @hazelcough #cssconfoak</h6>
+					<aside class="notes">
+						<p>I want to leave you with this quote from Michelle Bu, who spoke at CSSConfOak yesterday on a similar topic.</p>
+						<p>She's totally right: if we can focus on CSS now, if we can have someone focusing on all the organizational, architectural stuff—then we can think about it less in the future.</p>
+					</aside>
+				</section>
+
+
+				<section data-state="fuchsia">
 					<h2>Thank you!</h2>
 					<br/>
 					<br/>

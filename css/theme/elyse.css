@@ -55,7 +55,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #2380e2;
+  color: #155aa3;
   text-shadow: none;
   border: none; }
 
@@ -102,16 +102,16 @@ body {
   border-top-color: #fff; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #2380e2; }
+  border-right-color: #155aa3; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #2380e2; }
+  border-left-color: #155aa3; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #2380e2; }
+  border-bottom-color: #155aa3; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #2380e2; }
+  border-top-color: #155aa3; }
 
 /*********************************************
  * PROGRESS BAR
@@ -135,6 +135,24 @@ body {
 
 body {
   background: #3f1048; }
+
+.fuchsia body {
+  background: #c2185b; }
+
+.crimson body {
+  background: crimson; }
+
+.blue body {
+  background: #155aa3; }
+
+.green body {
+  background: #5d8000; }
+
+.black body {
+  background: #000; }
+
+.fuchsia {
+  color: #c2185b; }
 
 .reveal .code {
   font-family: "FiraMono", "Inconsolata", "Menlo", monospace; }
