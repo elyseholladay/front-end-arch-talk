@@ -134,7 +134,13 @@ body {
   color: #fff; }
 
 body {
-  background: #2d0b33; }
+  background: #3f1048; }
+
+.reveal .code {
+  font-family: "FiraMono", "Inconsolata", "Menlo", monospace; }
+
+.reveal p {
+  line-height: 1.5; }
 
 .reveal h4 {
   font-family: "PlutoSansCondRegular";
@@ -146,20 +152,22 @@ body {
 
 .reveal h6 {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   font-family: "PlutoSansRegular"; }
 
 .highlight {
   color: #fff; }
 
-.fade {
+.faded {
   color: rgba(255, 255, 255, 0.5); }
 
 .purple {
   color: #9c27b0; }
+
+.navy body {
+  background: #00111f; }
 
 .typekit-badge {
   display: none !important; }
