@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'pluto_sanscond_regular';
-    src: url('fonts/hvd_fonts_-_plutosanscondregular-webfont.eot');
-    src: url('fonts/hvd_fonts_-_plutosanscondregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/hvd_fonts_-_plutosanscondregular-webfont.woff') format('woff'),
-         url('fonts/hvd_fonts_-_plutosanscondregular-webfont.ttf') format('truetype'),
-         url('fonts/hvd_fonts_-_plutosanscondregular-webfont.svg#pluto_sanscond_regular') format('svg');
+    src: url('fonts/pluto-sans-condensed-regular.eot');
+    src: url('fonts/pluto-sans-condensed-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pluto-sans-condensed-regular.woff') format('woff'),
+         url('fonts/pluto-sans-condensed-regular.ttf') format('truetype'),
+         url('fonts/pluto-sans-condensed-regular.svg#pluto_sanscond_regular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -16,11 +16,11 @@
 
 @font-face {
     font-family: 'pluto_sanscond_light';
-    src: url('fonts/hvd_fonts_-_plutosanscondlight-webfont.eot');
-    src: url('fonts/hvd_fonts_-_plutosanscondlight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/hvd_fonts_-_plutosanscondlight-webfont.woff') format('woff'),
-         url('fonts/hvd_fonts_-_plutosanscondlight-webfont.ttf') format('truetype'),
-         url('fonts/hvd_fonts_-_plutosanscondlight-webfont.svg#pluto_sanscond_light') format('svg');
+    src: url('fonts/pluto-sans-condensed-light.eot');
+    src: url('fonts/pluto-sans-condensed-light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/pluto-sans-condensed-light.woff') format('woff'),
+         url('fonts/pluto-sans-condensed-light.ttf') format('truetype'),
+         url('fonts/pluto-sans-condensed-light.svg#pluto_sanscond_light') format('svg');
     font-weight: normal;
     font-style: normal;
 

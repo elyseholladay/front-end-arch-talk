@@ -11,7 +11,7 @@ body {
   background-color: #2b2b2b; }
 
 .reveal {
-  font-family: "PlutoSansCondLight", sans-serif;
+  font-family: "pluto_sanscond_light", "PlutoSansCondLight", sans-serif;
   font-size: 36px;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -33,7 +33,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #fff;
-  font-family: "PlutoSansCondLight", "PlutoSansCondLight", "pluto_sanscond_regular", "PlutoSansRegular", Impact, sans-serif;
+  font-family: "pluto_sanscond_light", "PlutoSansCondLight", "PlutoSansCondLight", "pluto_sanscond_regular", "PlutoSansRegular", Impact, sans-serif;
   line-height: 1.25em;
   letter-spacing: 0;
   text-transform: none;
@@ -161,7 +161,7 @@ body {
   line-height: 1.5; }
 
 .reveal h4 {
-  font-family: "PlutoSansCondRegular";
+  font-family: 'pluto_sanscond_regular', "PlutoSansCondRegular";
   font-size: 38px; }
 
 .reveal h5 {
@@ -173,7 +173,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: "PlutoSansRegular"; }
+  font-family: 'pluto_sanscond_regular', "PlutoSansRegular"; }
 
 .highlight {
   color: #fff; }

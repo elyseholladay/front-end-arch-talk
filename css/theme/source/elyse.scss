@@ -30,12 +30,12 @@ $yellow: rgb(255, 202, 0);
 $crimson: crimson;
 
 // Primary/body text
-$mainFont: 'PlutoSansCondLight', sans-serif;
+$mainFont: 'pluto_sanscond_light', 'PlutoSansCondLight', sans-serif;
 $mainFontSize: 36px;
 $mainColor: $white;
 
 // Headings
-$headingFont: "PlutoSansCondLight", "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
+$headingFont: 'pluto_sanscond_light', "PlutoSansCondLight", "PlutoSansCondLight", 'pluto_sanscond_regular', 'PlutoSansRegular', Impact, sans-serif;
 $headingColor: $white;
 $headingLineHeight: 1.25em;
 $headingLetterSpacing: 0;
@@ -95,7 +95,7 @@ body {
 }
 
 .reveal h4 {
-    font-family: "PlutoSansCondRegular";
+    font-family: 'pluto_sanscond_regular', "PlutoSansCondRegular";
     font-size: 38px;
 }
 
@@ -110,7 +110,7 @@ body {
     line-height: 20px;
     // margin-bottom: 0;
     text-transform: uppercase;
-    font-family: "PlutoSansRegular";
+    font-family: 'pluto_sanscond_regular', "PlutoSansRegular";
 }
 
 .highlight {
